@@ -22,7 +22,6 @@ function List({ onUserClick, activeId }) {
       <tbody>
         {users.map(({ id, name }) => (
           <tr
-            action
             active={activeId === id ? true : false}
             key={id}
             onClick={() => onUserClick({ id, name })}
